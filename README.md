@@ -1,7 +1,7 @@
 # knnモデルに基づく音質変換システム
 ## 推奨環境：
-- Windows のみ
-- MATLAB 2024a(Signal Processing Tool必須)
+- Windows 10以上推奨
+- MATLAB 2024a以上推奨(**Signal Processing Tool必須**)
 ## 使用方法：
 1. bone2airファイルを、任意のパスに配置
 2. bone2air\settings\setting.configを開き、自環境のMATLABパスへ置き換える
@@ -39,5 +39,8 @@ USE_SPECIFIC_SPEAKER =0;
 
 ```
 ### kの値を変える
-your_path\bone2air\src\bin\synthesis_knn.m を開く\
-52行目と62行目のk値を任意の値に変更してください。
+1. your_path\bone2air\src\bin\synthesis_knn.m を開く。
+2. synthesis_knn.m 52行目と62行目のk値を任意の値に変更してください。
+
+### reference
+[WORLD](https://github.com/mmorise/World)
